@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
                 cout << "Invalid number of sides. Must be greater than 1." << endl;
             }
         } 
-        else if (command != EXIT) {
+        else if (command == "add" || command == "subtract" || command == "multiply" || command == "divide") {
             double num1, num2;
             cin >> num1 >> num2;
             try {
@@ -58,7 +58,9 @@ int main(int argc, char *argv[]) {
                 cout << "Error: " << e.what() << endl;
                 return 1;
             }
-            // cout << "Unknown command. Type 'help' for available commands." << endl;
+        }
+        else if (command != EXIT) {
+            cout << "Unknown command. Type 'help' for available commands." << endl;
         }
     } while (command != EXIT);        
     return 0;

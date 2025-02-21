@@ -3,7 +3,7 @@ CXX = g++
 CXXFLAGS = -Wall -g
 
 # Files
-SRC = main.cpp mathfuncs.cpp
+SRC = main.cpp mathfuncs.cpp randfuncs.cpp
 
 # Object files
 OBJ = $(SRC:.cpp=.o)
