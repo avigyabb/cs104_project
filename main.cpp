@@ -41,10 +41,10 @@ int main(int argc, char *argv[]) {
             int sides;
             cin >> sides;
 
-            if (sides > 1) {
+            if (sides == 6 || sides == 20) {
                 cout << "Rolled: " << roll_dice(sides) << endl;
             } else {
-                cout << "Invalid number of sides. Must be greater than 1." << endl;
+                cout << "Invalid number of sides. Must be 6 or 20." << endl;
             }
         } 
         else if (command == "add" || command == "subtract" || command == "multiply" || command == "divide") {
